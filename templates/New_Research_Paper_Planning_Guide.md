@@ -105,7 +105,63 @@ Determine the venue type and look up the current year's call for papers (CFP):
 | **Workshop** | ACL workshops, NeurIPS workshops | Often 4–6 pages, non-archival, looser formatting |
 | **Preprint** | arXiv | No page limit, no review, any LaTeX style; cite as `@misc` |
 
-### 6.2 Venue Quick Reference — Formatting & Requirements
+### 6.2 Target Scope & Research Areas by Venue
+
+Submitting a paper to a venue where it is out-of-scope will result in a rapid desk reject. Use this table to align your project's research area with the correct venue:
+
+| Venue Family | Core Research Areas & Topics | Best-Fit Submission Tracks | Avoid Submitting Here If... |
+|---|---|---|---|
+| **NLP / CL**<br>*(ACL, EMNLP, NAACL, EACL, COLING)* | Machine Translation, Text Summarization, Dialogue Systems, Syntax & Parsing, Sentiment Analysis, Semantics, Low-Resource Language Datasets, LLM Analysis. | Multilinguality, Machine Translation, Dialogue & Interactive Systems, Resources & Evaluation. | The paper is purely about a new audio compression codec or pure machine learning optimization theory with no natural language evaluation. |
+| **ML / AI**<br>*(NeurIPS, ICML, ICLR)* | Optimization, Deep Learning theory, Reinforcement Learning, Generative Models (Diffusion/LLMs), Representation Learning, AI Safety, ML for Science. | Deep Learning, Optimization, Generative Models, Datasets & Benchmarks (NeurIPS). | The paper is a straightforward application of standard Whisper model preprocessing to a new language dataset with no algorithmic or architecture novelty. |
+| **Speech / Signal**<br>*(INTERSPEECH, ICASSP, SLT, ASRU)* | ASR (Speech-to-Text), TTS (Text-to-Speech), Speech Enhancement, Speaker ID/Diarization, Spoken Language Translation, Audio Emotion Detection, VAD. | Speech Recognition, Speech Synthesis, Spoken Language Processing, Audio Signal Processing. | The paper evaluates only text-only LLMs without using any acoustic, audio, or speech signals. |
+| **Computer Vision**<br>*(CVPR, ICCV, ECCV)* | Object Detection, Semantic Segmentation, 3D Reconstruction, Video Understanding, Vision-Language Models (VLMs), Image Generation. | Image Synthesis, Video Analytics, Vision & Language, 3D Computer Vision. | The paper focuses solely on text classification or speech signals with no visual (image, video, point-cloud) component. |
+| **General AI**<br>*(AAAI, IJCAI, SACAIR)* | Symbolic Planning, Knowledge Representation, Multi-Agent Systems, Heuristic Search, Game Theory, general ML/NLP applications. | Heuristic Search, Multi-Agent Systems, Applications of AI, AI and Society. | The work is highly specialized in acoustics or image processing; general AI reviewers might find it too niche. |
+| **Specialized NLP/Dialogue**<br>*(CoNLL, SIGDIAL, AfricaNLP)* | Learning-centric NLP (CoNLL), Conversational Agents (SIGDIAL), African & Low-Resource Languages (AfricaNLP). | Linguistic Theories, Dialogue Management, Low-Resource Resources & Datasets. | The paper is broad-domain computer vision or hardware optimization. |
+
+### 6.3 Typical Submission Cycles & Timelines
+
+To help you plan experiments and schedule writing, here are the typical submission and conference timelines for major AI, ML, NLP, Speech, and Vision venues:
+
+| Venue | Typical Submission Deadline | Typical Notification Date | Conference Date | Frequency & Focus |
+|---|---|---|---|---|
+| **NeurIPS** | Mid-May | September | Early December | Annual (Core Machine Learning) |
+| **ICML** | Late January | April | July | Annual (Core Machine Learning) |
+| **ICLR** | Late September | January | Late April / May | Annual (Deep Learning focus) |
+| **ACL** | ARR Commitment: January / February | April | August | Annual (NLP / Computational Linguistics) |
+| **EMNLP** | ARR Commitment: June / July | September | November / December | Annual (NLP / Empirical Methods) |
+| **NAACL** | ARR Commitment: December / January | March | May / June | Annual/Biennial (NLP Americas) |
+| **CVPR** | Mid-November | Late February / March | June | Annual (Computer Vision) |
+| **ICCV** | Early March | July | October | Biennial (Computer Vision, odd years) |
+| **ECCV** | Early March | July | September / October | Biennial (Computer Vision, even years) |
+| **INTERSPEECH** | Early March (usually March 1–7) | Mid-June | Late August / September | Annual (Speech & Audio Processing) |
+| **ICASSP** | Early September (usually Sept 1–8) | Mid-December | April / May | Annual (Signal Processing & Speech) |
+| **AAAI** | Mid-August | November | February | Annual (General AI) |
+| **IJCAI** | January | April | August | Annual (General AI) |
+
+> [!NOTE]
+> **ACL Rolling Review (ARR):** The Association for Computational Linguistics now uses ARR as a rolling review system with monthly cycles. The dates above indicate the **commitment deadline** (when you must commit a fully reviewed ARR paper to the specific conference).
+
+#### Smaller, Regional, and Specialized Venues
+
+For specialized sub-fields (e.g., spoken language, dialogue) and regional conferences, the typical timelines are as follows:
+
+| Venue | Typical Submission Deadline | Typical Notification Date | Conference Date | Frequency & Focus |
+|---|---|---|---|---|
+| **EACL** | ARR Commitment: October / November | January | March / April | Annual (NLP European chapter) |
+| **AACL** | ARR Commitment: August | October | November / December | Annual (NLP Asia-Pacific chapter) |
+| **COLING** | June / July | September | December | Annual (Computational Linguistics) |
+| **CoNLL** | ARR Commitment: August | September | November | Annual (Learning-centric NLP) |
+| **SLT (IEEE)** | June / July | October | December | Biennial, even years (Spoken Language Tech) |
+| **ASRU (IEEE)** | June / July | October | December | Biennial, odd years (Speech Recognition/Understanding) |
+| **SIGDIAL** | May | July | September | Annual (Dialogue & Discourse) |
+| **KDD** | February | May | August | Annual (Data Mining & Knowledge Discovery) |
+| **AfricaNLP Workshop** | January / February | March | May (co-located at ICLR/ACL) | Annual (African Languages NLP) |
+| **SACAIR** | June / July | September | December | Annual (Southern African AI Research) |
+
+> [!TIP]
+> **Workshop Timelines:** If you are targeting a workshop co-located with a major conference (e.g., a NeurIPS, ICML, or ACL workshop), the submission deadline is typically **10 to 12 weeks before** the main conference date. Most workshops accept both archival (usually 4–6 pages) and non-archival (extended abstracts of 2–4 pages) submissions.
+
+### 6.4 Venue Quick Reference — Formatting & Requirements
 
 | Requirement | ACL / EMNLP / NAACL | NeurIPS / ICML / ICLR | INTERSPEECH | ICASSP / SLT (IEEE) | AAAI | CVPR | Journal (TACL / JMLR) |
 |------------|---------------------|----------------------|-------------|---------------------|------|------|----------------------|
@@ -125,7 +181,7 @@ Determine the venue type and look up the current year's call for papers (CFP):
 > E.g., ACL 2023 introduced mandatory "Limitations" sections; NeurIPS 2023 added
 > "Broader Impact" requirements that 2021 didn't have.
 
-### 6.3 Section Outline by Venue Family
+### 6.5 Section Outline by Venue Family
 
 #### ACL / EMNLP / NAACL (NLP Conferences)
 
@@ -280,7 +336,7 @@ Appendices
 - **IEEE TASLP**: IEEE Transactions on Audio, Speech, and Language Processing. Uses IEEE journal format (single-column review, double-column final). Revision cycles can be 6–12 months.
 - **Computer Speech & Language (CSL)**: Elsevier. Uses Elsevier LaTeX template. Impact factor matters for some institutions.
 
-### 6.4 Citation Style Quick Reference
+### 6.6 Citation Style Quick Reference
 
 Different venues use different BibTeX entry types and formatting:
 
@@ -323,7 +379,7 @@ Different venues use different BibTeX entry types and formatting:
 > preprint when the conference/journal version is out signals that you didn't
 > do a thorough literature review.
 
-### 6.5 Mandatory & Optional Sections Checklist
+### 6.7 Mandatory & Optional Sections Checklist
 
 Use this to avoid desk rejects by missing required sections:
 
@@ -339,7 +395,7 @@ Use this to avoid desk rejects by missing required sections:
 | Author Contributions | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ (some journals) |
 | Conflict of Interest | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ (journals) |
 
-### 6.6 Writing Style Differences
+### 6.8 Writing Style Differences
 
 | Dimension | Conference Paper | Journal Paper | Workshop Paper |
 |-----------|-----------------|---------------|----------------|
@@ -351,7 +407,7 @@ Use this to avoid desk rejects by missing required sections:
 | **Figure quality** | Publication-ready (vector PDF) | Publication-ready + higher DPI | Acceptable quality |
 | **Self-citation** | Careful — anonymised during review | Normal — help reviewers trace your work | Normal |
 
-### 6.7 Abstract Drafting
+### 6.9 Abstract Drafting
 
 Write a draft abstract following this structure (adapt word count to venue):
 

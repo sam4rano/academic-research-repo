@@ -148,7 +148,7 @@ Before submitting your manuscript or releasing code/data, cross-check these item
 - [ ] `evaluation/outputs/metrics.json` is committed or attached to the supplemental material.
 
 ### 📝 Venue & Submission Compliance
-- [ ] Target venue constraints (page limit, LaTeX template, review system) are validated (see [Planning Guide Section 6.2](templates/New_Research_Paper_Planning_Guide.md#62-venue-quick-reference--formatting--requirements)).
+- [ ] Target venue constraints (page limit, LaTeX template, review system) are validated (see [Planning Guide Section 6.4](templates/New_Research_Paper_Planning_Guide.md#64-venue-quick-reference--formatting--requirements)).
 - [ ] Mandatory sections are present (e.g., "Limitations" + "Ethics Statement" for ACL; "Broader Impact" for NeurIPS).
 - [ ] Citation style is verified (e.g., natbib `\citep` for ACL/NeurIPS; numbered `[1]` for INTERSPEECH/ICASSP).
 - [ ] Every reference bibtex is updated to its peer-reviewed published version (no stale arXiv preprints if published).
