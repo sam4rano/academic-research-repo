@@ -431,5 +431,3 @@ Research Area: [e.g. Speech LLM Evaluation]
 > [Paste your notes here as you read the paper]
 
 ---
-
-*Template by: Research Skill Suite v1.0 | Modelled on DOWIS (Züfle et al., 2026)*
