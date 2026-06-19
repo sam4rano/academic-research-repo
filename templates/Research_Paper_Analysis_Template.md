@@ -1,8 +1,4 @@
 # Research Paper Analysis Template
-> **Template version:** 1.0 | Derived from DOWIS methodology (arXiv:2603.09881)
-> Fill in each section. Delete guidance text (in *italics*) before finalising.
-
----
 
 ## PAPER IDENTITY
 
