@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+title: "Academic Research Template Repository"
+authors:
+  - family-names: "Oyerinde"
+    given-names: "Samuel"
+    affiliation: "Masakhane"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "1.0.0"
+date-released: "2026-06-19"
+license: MIT
+url: "https://github.com/sam4rano/academic-research-repo"
+abstract: >
+  A standardized, reproducible template repository for NLP, speech, and ML
+  research projects. Includes evaluation metric scaffolding, data storage
+  conventions, and research analysis templates.

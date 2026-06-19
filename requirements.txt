@@ -1,0 +1,34 @@
+# ============================================================
+# Academic Research Template — Python Dependencies
+# Python >= 3.10 recommended
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# --- Core ML / NLP ---
+transformers>=4.40.0,<5.0.0
+datasets>=2.19.0,<4.0.0
+evaluate>=0.4.2,<1.0.0
+torch>=2.2.0               # Required for BERTScore, CometKiwi, Transformers GPU
+
+# --- Numerics ---
+numpy>=1.26.0,<2.0.0
+
+# --- Utilities ---
+tqdm>=4.66.0
+
+# --- Audio / Speech ---
+soundfile>=0.12.1
+pesq>=0.0.4                # PESQ speech quality metric (reference-based)
+# utmos — install separately if needed: pip install utmos
+# Note: UTMOS wheels are not on PyPI for all platforms; see https://github.com/sarulab-speech/UTMOS22
+
+# --- ASR Metrics ---
+jiwer>=3.0.4               # Word Error Rate (WER) and Character Error Rate (CER)
+
+# --- MT / ST Metrics ---
+sacrebleu>=2.4.0           # BLEU (reference-based; legacy MT metric)
+unbabel-comet>=2.2.0       # CometKiwi (reference-free, human-correlated MT/ST metric)
+
+# --- Summarisation / Generation Metrics ---
+bert-score>=0.3.13         # BERTScore (semantic similarity; use deberta-xlarge-mnli)
+rouge-score>=0.1.2         # ROUGE N-gram overlap (legacy; supplement with BERTScore)
