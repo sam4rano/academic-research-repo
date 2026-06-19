@@ -110,7 +110,7 @@ This repository includes a suite of templates in the [templates/](templates/) di
 
 | Template | Purpose | Key Features |
 |---|---|---|
-| [New_Research_Paper_Planning_Guide.md](templates/New_Research_Paper_Planning_Guide.md) | **Step-by-step guide** for planning new research papers (Mode B). | Phase-by-phase planning, **venue-specific structural details**, mandatory section checklists (Ethics/Limitations), citation styles, writing style tips, and abstract structures for 7+ conference families. |
+| [New_Research_Paper_Planning_Guide.md](templates/New_Research_Paper_Planning_Guide.md) | **Step-by-step guide** for planning new research papers (Mode B). | Phase-by-phase planning, **target scope & research area maps** (to prevent desk rejects), **typical submission deadlines & conference cycles** (for major AI/ML/NLP/Speech/Vision venues and specialized workshops like AfricaNLP and SACAIR), formatting and page limits, mandatory section checklists, and abstract drafting. |
 | [Research_Paper_Analysis_Template.md](templates/Research_Paper_Analysis_Template.md) | **Blank template** for literature review, analysis, and replication planning (Mode A). | Venue Type tagging, reproducibility audit checklist, and venue-specific BibTeX templates (ISCA, ACL/NeurIPS, arXiv) to ensure correct metadata tracking. |
 | [DOWIS_Research_Deep_Dive.md](templates/DOWIS_Research_Deep_Dive.md) | **Reference deep dive** dissecting the DOWIS (Züfle et al., 2026) paper. | Exemplar showing how to use the analysis template, complete with synthesis tables, reproducing checklist results, and 3 BibTeX citation style variants (ISCA, ACL, arXiv). |
 
