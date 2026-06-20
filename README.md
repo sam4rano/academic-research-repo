@@ -39,6 +39,7 @@ academic-research-repo/
 ├── templates/              # Research dissection and planning documents
 │   ├── New_Research_Paper_Planning_Guide.md   # Step-by-step venue-aware planning guide
 │   ├── Research_Paper_Analysis_Template.md    # Blank literature review & analysis template
+│   ├── Multi_Paper_Comparison_Tracker.md      # Multi-paper & experiment results comparison tracker
 │   ├── DOWIS_Research_Deep_Dive.md            # Reference guide (DOWIS Spoken Instruction paper)
 │   ├── SIFT50M_Research_Deep_Dive.md          # Reference guide (SIFT-50M speech LLM paper)
 │   └── CLaS_Bench_Research_Deep_Dive.md        # Reference guide (CLaS-Bench multilingual steering paper)
@@ -115,6 +116,7 @@ This repository includes a suite of templates in the [templates/](templates/) di
 |---|---|---|
 | [New_Research_Paper_Planning_Guide.md](templates/New_Research_Paper_Planning_Guide.md) | **Step-by-step guide** for planning new research papers (Mode B). | Phase-by-phase planning, **target scope & research area maps** (to prevent desk rejects), **typical submission deadlines & conference cycles** (for major AI/ML/NLP/Speech/Vision venues and specialized workshops like AfricaNLP and SACAIR), formatting and page limits, mandatory section checklists, and abstract drafting. |
 | [Research_Paper_Analysis_Template.md](templates/Research_Paper_Analysis_Template.md) | **Blank template** for literature review, analysis, and replication planning (Mode A). | Venue Type tagging, reproducibility audit checklist, and venue-specific BibTeX templates (ISCA, ACL/NeurIPS, arXiv) to ensure correct metadata tracking. |
+| [Multi_Paper_Comparison_Tracker.md](templates/Multi_Paper_Comparison_Tracker.md) | **Comparison tracker** for surveying multiple papers and tracking active experiment runs side-by-side. | 10 parts: Paper comparison table, experiment run tracker, ablation tracker, per-language results grid, prompt style results, model comparison, dataset comparison, figure planning sheet, paper writing tracker, and submission checklist. |
 | [DOWIS_Research_Deep_Dive.md](templates/DOWIS_Research_Deep_Dive.md) | **Reference deep dive** dissecting the DOWIS (Züfle et al., 2026) paper. | Exemplar showing how to use the analysis template, complete with synthesis tables, reproducing checklist results, and 3 BibTeX citation style variants (ISCA, ACL, arXiv). |
 | [SIFT50M_Research_Deep_Dive.md](templates/SIFT50M_Research_Deep_Dive.md) | **Reference deep dive** dissecting the SIFT-50M (Pandey et al., ACL 2025) paper. | Exemplar detailing Whisper-medium acoustic encoders, LoRA parameters alignment, and EvalSIFT dataset splits. |
 | [CLaS_Bench_Research_Deep_Dive.md](templates/CLaS_Bench_Research_Deep_Dive.md) | **Reference deep dive** dissecting the CLaS-Bench (Gurgurov et al., 2026) paper. | Exemplar detailing cross-lingual alignment and steering representations, PCA/LDA/SAE steering methods, and the LID + BERTScore steering evaluation formula. |
