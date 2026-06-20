@@ -175,10 +175,10 @@ Three documents are part of this skill suite:
 
 | File | Purpose | When to Use |
 |------|---------|-------------|
-| `DOWIS_Research_Deep_Dive.md` | Reference example of a complete paper breakdown | Study template; shows what depth looks like |
-| `Research_Paper_Analysis_Template.md` | Blank template to fill for any paper | MODE A — fill this for every paper analysed |
-| `New_Research_Paper_Planning_Guide.md` | Phase-by-phase research planning guide | MODE B — follow phases when planning new work |
-| `Multi_Paper_Comparison_Tracker.md` | Comparison tracker for surveying multiple papers and tracking active experiment runs side-by-side | Use to track experiment runs, ablations, prompt styling metrics, and submissions |
+| [DOWIS_Research_Deep_Dive.md](templates/DOWIS_Research_Deep_Dive.md) | Reference example of a complete paper breakdown | Study template; shows what depth looks like |
+| [Research_Paper_Analysis_Template.md](templates/Research_Paper_Analysis_Template.md) | Blank template to fill for any paper | MODE A — fill this for every paper analysed |
+| [New_Research_Paper_Planning_Guide.md](templates/New_Research_Paper_Planning_Guide.md) | Phase-by-phase research planning guide | MODE B — follow phases when planning new work |
+| [Multi_Paper_Comparison_Tracker.md](templates/Multi_Paper_Comparison_Tracker.md) | Comparison tracker for surveying multiple papers and tracking active experiment runs side-by-side | Use to track experiment runs, ablations, prompt styling metrics, and submissions |
 
 ---
 
