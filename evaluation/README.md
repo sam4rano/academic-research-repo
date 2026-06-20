@@ -29,7 +29,22 @@ evaluation/
 │   └── metrics.json
 ├── eval_asr.py       # Example: WER computation script
 ├── eval_mt.py        # Example: CometKiwi / BLEU computation
+├── visualize.py      # LaTeX table and matplotlib vector plotting formatter
 └── README.md         # This file
+```
+
+---
+
+## Generating Tables & Figures
+
+Use the visualizer utility to compile your `metrics.json` outputs into publication-ready figures (PDF format for lossless vector scale) and copy-pasteable LaTeX tables:
+
+```bash
+# Generate both LaTeX table.tex and comparison_chart.pdf
+python3 evaluation/visualize.py --input_dir evaluation/outputs
+
+# Output only the LaTeX tabular block to console
+python3 evaluation/visualize.py --mode table
 ```
 
 ---
