@@ -29,6 +29,9 @@ Follow these phases sequentially when planning, designing, and launching a new r
 
 ## Phase 3: Experiment Design
 
+> [!TIP]
+> **Surveying & Scoping:** Use the **[Multi-Paper Comparison Tracker Part 1 (Paper Comparison)](Multi_Paper_Comparison_Tracker.md#part-1-paper-comparison-table)** to catalog existing work, and **[Part 7 (Dataset Comparison)](Multi_Paper_Comparison_Tracker.md#part-7-dataset-comparison)** to contrast scope boundaries.
+
 ### 3.1 Hypothesis Matrix
 *   For **every** research question (RQ), write one falsifiable hypothesis in the form:
     *   *"If [intervention], then [outcome], because [mechanism]."*
@@ -36,11 +39,11 @@ Follow these phases sequentially when planning, designing, and launching a new r
 ### 3.2 Baselines
 *   Select at least **3 state-of-the-art** baseline models or methods for comparison.
 *   Include at least one **simple/naive baseline** (e.g. majority class, identity function) as a lower bound.
-*   Document each baseline's source (paper citation + Hugging Face ID or checkpoint URL).
+*   Document each baseline's source (paper citation + Hugging Face ID or checkpoint URL). Compare model metrics side-by-side using **[Part 6 (Model Comparison)](Multi_Paper_Comparison_Tracker.md#part-6-model-comparison)**.
 
 ### 3.3 Ablation Design
 *   Plan ablations *before* running experiments: decide which components to remove/swap to isolate the effect of each contribution.
-*   Record the ablation plan as a table: `| Ablated Component | Expected Effect | Justification |`
+*   Record active experiment runs using the **[Part 2 (Experiment Run Tracker)](Multi_Paper_Comparison_Tracker.md#part-2-experiment-run-tracker)** and document ablation outcomes in **[Part 3 (Ablation Tracker)](Multi_Paper_Comparison_Tracker.md#part-3-ablation-tracker)**.
 
 ### 3.4 Metric Selection
 *   Pick robust, standard, and **human-correlated** evaluation metrics.
@@ -79,12 +82,15 @@ Follow these phases sequentially when planning, designing, and launching a new r
 ---
 
 ## Phase 5: Visualizations & Analytics Plan
-*   **Table Plan**: Sketch the structure of the main evaluation tables before running experiments.
-*   **Figure Plan**: Define what charts/plots will visualize results (e.g. line graph showing accuracy vs noise level).
+*   **Table Plan**: Sketch the structure of the main evaluation tables before running experiments. Use **[Multi-Paper Comparison Tracker Part 4 (Per-Language Grid)](Multi_Paper_Comparison_Tracker.md#part-4-per-language-results-grid)** for multilingual results, and **[Part 5 (Prompt Style Results)](Multi_Paper_Comparison_Tracker.md#part-5-prompt-style-results)** for prompt sensitivity matrices.
+*   **Figure Plan**: Define what charts/plots will visualize results (e.g. line graph showing accuracy vs noise level). Map out figure types, axes, and captions using **[Part 8 (Figure Planning Sheet)](Multi_Paper_Comparison_Tracker.md#part-8-figure-planning-sheet)**.
 
 ---
 
 ## Phase 6: Paper Structure & Writing
+
+> [!TIP]
+> **Writing Progress:** Use **[Multi-Paper Comparison Tracker Part 9 (Paper Writing Tracker)](Multi_Paper_Comparison_Tracker.md#part-9-paper-writing-tracker)** to organize writing ownership, section drafting status, and target word counts across co-authors.
 
 > ⚠️ **Different venues have fundamentally different requirements.** Always identify
 > your target venue **before** you start writing. The wrong template, citation style,
@@ -429,6 +435,10 @@ Write a draft abstract following this structure (adapt word count to venue):
 ---
 
 ## Phase 7: Release Preparation
+
+> [!IMPORTANT]
+> **Pre-Submission Validation:** Complete all pre-submission checks and verify metadata using the comprehensive **[Multi-Paper Comparison Tracker Part 10 (Submission Checklist)](Multi_Paper_Comparison_Tracker.md#part-10-submission-checklist)** before submission.
+
 *   **Dataset Card**: Create a Hugging Face README documenting data split sizes, demographics, license, and usage instructions.
 *   **GitHub README**: Outline setup requirements, environment files, and a **single command** to reproduce key results.
 *   **Ethics / IRB**: If the dataset involves human participants (recordings, annotations, surveys), document IRB approval or equivalent ethics review status.
