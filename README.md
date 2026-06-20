@@ -45,6 +45,7 @@ academic-research-repo/
 ├── .gitignore              # Excludes data, outputs, and environment files
 ├── CITATION.cff            # Project citation metadata (CFF format)
 ├── LICENSE                 # MIT License file
+├── SKILL.md                # Agent routing rules & evaluation standard guidelines
 ├── runner.py               # Inference + evaluation execution pipeline
 ├── requirements.txt        # Pinned package dependencies (Python ≥ 3.10)
 └── README.md               # This file
