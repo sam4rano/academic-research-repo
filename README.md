@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white&style=flat-square)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Templates: Venue-Aware](https://img.shields.io/badge/Templates-Venue--Aware-orange?style=flat-square)](templates/)
-[![Standards: Reproducible](https://img.shields.io/badge/Reproducibility-Verified-blueviolet?style=flat-square)](#6-submission--reproducibility-checklist)
+[![Standards: Reproducible](https://img.shields.io/badge/Reproducibility-Verified-blueviolet?style=flat-square)](#7-submission--reproducibility-checklist)
 
 A standardized, reproducible, and **venue-aware** template repository for machine learning, NLP, and AI research projects, aligned with the **Academic Research & Evaluation Skill** guidelines.
 
@@ -91,7 +91,43 @@ python runner.py \
 
 ---
 
-## 3. Core Design Principles
+## 3. Practical Research Workflow (Step-by-Step)
+
+Here is how to combine the templates, guidelines, and skills in this repository to execute your research workflow:
+
+### Step 1: Dissect & Survey Literature (Mode A)
+1. Load the **Academic Research & Evaluation Skill** ([SKILL.md](SKILL.md)) into your AI coding assistant.
+2. Provide the assistant with a paper or repository URL (e.g. `https://arxiv.org/abs/2601.08331`).
+3. The assistant will fetch the source and output a structured analysis following the [Research_Paper_Analysis_Template.md](templates/Research_Paper_Analysis_Template.md) format.
+4. Survey multiple competing papers side-by-side using the **[Multi-Paper Tracker Part 1](templates/Multi_Paper_Comparison_Tracker.md#part-1-paper-comparison-table)**.
+
+### Step 2: Plan Your Project & Scope (Mode B)
+1. Step through the planning phases in **[New_Research_Paper_Planning_Guide.md](templates/New_Research_Paper_Planning_Guide.md)**.
+2. Check your target venue's page limits, required sections, and submission cycles in **[Section 6.2 & 6.3](templates/New_Research_Paper_Planning_Guide.md#62-target-scope--research-areas-by-venue)** to prevent rapid out-of-scope desk rejects.
+3. Formulate your hypothesis matrix, select human-correlated metrics, and plan your figures using **[Multi-Paper Tracker Part 8](templates/Multi_Paper_Comparison_Tracker.md#part-8-figure-planning-sheet)**.
+
+### Step 3: Implement & Run Experiments
+1. Implement your preprocessing steps in `src/` and wrap your models under `models/` using the standard `BaseModelWrapper` interface.
+2. Run a dry run (`python runner.py --dry_run`) to verify your pipelines.
+3. Launch your experiment grid using `runner.py --model ... --dataset ...`.
+4. Log and track every experiment run in **[Multi-Paper Tracker Part 2](templates/Multi_Paper_Comparison_Tracker.md#part-2-experiment-run-tracker)** and your ablation runs in **[Part 3](templates/Multi_Paper_Comparison_Tracker.md#part-3-ablation-tracker)**.
+
+### Step 4: Generate Publication Assets
+1. Compile your `metrics.json` logs into LaTeX tables and vector diagrams by running:
+   ```bash
+   python3 evaluation/visualize.py --mode all
+   ```
+2. Copy the resulting LaTeX code directly from `evaluation/outputs/table.tex` into your LaTeX manuscript.
+3. Place the vector PDF `comparison_chart.pdf` directly into your paper figures directory.
+
+### Step 5: Final Submission Checks
+1. Assign co-author writing tasks and track drafting completion using **[Multi-Paper Tracker Part 9](templates/Multi_Paper_Comparison_Tracker.md#part-9-paper-writing-tracker)**.
+2. Verify all requirements, files, and citation metadata (e.g. updating old arXiv preprints to published citations) in **[Part 10 (Submission Checklist)](templates/Multi_Paper_Comparison_Tracker.md#part-10-submission-checklist)**.
+3. Include your [CITATION.cff](CITATION.cff) file and tag your release build before submitting to your venue.
+
+---
+
+## 4. Core Design Principles
 
 1. **Decouple Prompts from Data**: Keep prompt formatting and instruction templates separate from raw dataset inputs. This enables testing the same dataset under varied prompt styles (e.g. formal, informal, short, detailed).
 2. **Reproducibility Non-Negotiables**:
@@ -108,7 +144,7 @@ python runner.py \
 
 ---
 
-## 4. Academic Templates & Workflow
+## 5. Academic Templates & Workflow
 
 This repository includes a suite of templates in the [templates/](templates/) directory to guide you from paper reading to drafting your submission:
 
@@ -126,7 +162,7 @@ This repository includes a suite of templates in the [templates/](templates/) di
 
 ---
 
-## 5. Metric Quick Reference
+## 6. Metric Quick Reference
 
 | Task | Primary Metric | Tools / Packages | Direction | Notes & Selection Guidelines |
 |---|---|---|---|---|
@@ -141,7 +177,7 @@ This repository includes a suite of templates in the [templates/](templates/) di
 
 ---
 
-## 6. Submission & Reproducibility Checklist
+## 7. Submission & Reproducibility Checklist
 
 Before submitting your manuscript or releasing code/data, cross-check these items:
 
@@ -164,7 +200,7 @@ Before submitting your manuscript or releasing code/data, cross-check these item
 
 ---
 
-## 7. Citing This Repository
+## 8. Citing This Repository
 
 If you use this template or baseline runner in your academic research, please cite the repository using the citation metadata below. Alternatively, you can use the "Cite this repository" feature provided by GitHub in the sidebar.
 
@@ -183,6 +219,6 @@ If you use this template or baseline runner in your academic research, please ci
 
 ---
 
-## 8. License
+## 9. License
 
 This template repository is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
