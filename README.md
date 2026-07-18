@@ -42,7 +42,8 @@ academic-research-repo/
 │   ├── Multi_Paper_Comparison_Tracker.md      # Multi-paper & experiment results comparison tracker
 │   ├── DOWIS_Research_Deep_Dive.md            # Reference guide (DOWIS Spoken Instruction paper)
 │   ├── SIFT50M_Research_Deep_Dive.md          # Reference guide (SIFT-50M speech LLM paper)
-│   └── CLaS_Bench_Research_Deep_Dive.md        # Reference guide (CLaS-Bench multilingual steering paper)
+│   ├── CLaS_Bench_Research_Deep_Dive.md        # Reference guide (CLaS-Bench multilingual steering paper)
+│   └── Ethio_ASR_Research_Deep_Dive.md         # Reference guide (Ethio-ASR Ethiopian ASR + LID paper)
 ├── .gitignore              # Excludes data, outputs, and environment files
 ├── CITATION.cff            # Project citation metadata (CFF format)
 ├── LICENSE                 # MIT License file
@@ -156,6 +157,7 @@ This repository includes a suite of templates in the [templates/](templates/) di
 | [DOWIS_Research_Deep_Dive.md](templates/DOWIS_Research_Deep_Dive.md) | **Reference deep dive** dissecting the DOWIS (Züfle et al., 2026) paper. | Exemplar showing how to use the analysis template, complete with synthesis tables, reproducing checklist results, and 3 BibTeX citation style variants (ISCA, ACL, arXiv). |
 | [SIFT50M_Research_Deep_Dive.md](templates/SIFT50M_Research_Deep_Dive.md) | **Reference deep dive** dissecting the SIFT-50M (Pandey et al., ACL 2025) paper. | Exemplar detailing Whisper-medium acoustic encoders, LoRA parameters alignment, and EvalSIFT dataset splits. |
 | [CLaS_Bench_Research_Deep_Dive.md](templates/CLaS_Bench_Research_Deep_Dive.md) | **Reference deep dive** dissecting the CLaS-Bench (Gurgurov et al., 2026) paper. | Exemplar detailing cross-lingual alignment and steering representations, PCA/LDA/SAE steering methods, and the LID + BERTScore steering evaluation formula. |
+| [Ethio_ASR_Research_Deep_Dive.md](templates/Ethio_ASR_Research_Deep_Dive.md) | **Reference deep dive** dissecting the Ethio-ASR (Abdullah et al., 2026) paper. | Exemplar detailing joint CTC-based ASR + LID via `[LANG]` tokens on the WAXAL corpus (5 Ethiopian languages), gender-bias and vowel-length/gemination error analyses, and WER benchmarking vs. OmniASR/Whisper/MMS baselines. |
 
 > [!TIP]
 > Use the associated **Research Paper Analyst Skill** (`academic-research-eval`) to automatically parse paper repos, perform literature analysis, design hypotheses, and validate submission packages.
