@@ -43,7 +43,8 @@ academic-research-repo/
 │   ├── DOWIS_Research_Deep_Dive.md            # Reference guide (DOWIS Spoken Instruction paper)
 │   ├── SIFT50M_Research_Deep_Dive.md          # Reference guide (SIFT-50M speech LLM paper)
 │   ├── CLaS_Bench_Research_Deep_Dive.md        # Reference guide (CLaS-Bench multilingual steering paper)
-│   └── Ethio_ASR_Research_Deep_Dive.md         # Reference guide (Ethio-ASR Ethiopian ASR + LID paper)
+│   ├── Ethio_ASR_Research_Deep_Dive.md         # Reference guide (Ethio-ASR Ethiopian ASR + LID paper)
+│   └── PluraMath_Research_Deep_Dive.md         # Reference guide (PluraMath multilingual math reasoning benchmark)
 ├── .gitignore              # Excludes data, outputs, and environment files
 ├── CITATION.cff            # Project citation metadata (CFF format)
 ├── LICENSE                 # MIT License file
@@ -158,6 +159,7 @@ This repository includes a suite of templates in the [templates/](templates/) di
 | [SIFT50M_Research_Deep_Dive.md](templates/SIFT50M_Research_Deep_Dive.md) | **Reference deep dive** dissecting the SIFT-50M (Pandey et al., ACL 2025) paper. | Exemplar detailing Whisper-medium acoustic encoders, LoRA parameters alignment, and EvalSIFT dataset splits. |
 | [CLaS_Bench_Research_Deep_Dive.md](templates/CLaS_Bench_Research_Deep_Dive.md) | **Reference deep dive** dissecting the CLaS-Bench (Gurgurov et al., 2026) paper. | Exemplar detailing cross-lingual alignment and steering representations, PCA/LDA/SAE steering methods, and the LID + BERTScore steering evaluation formula. |
 | [Ethio_ASR_Research_Deep_Dive.md](templates/Ethio_ASR_Research_Deep_Dive.md) | **Reference deep dive** dissecting the Ethio-ASR (Abdullah et al., 2026) paper. | Exemplar detailing joint CTC-based ASR + LID via `[LANG]` tokens on the WAXAL corpus (5 Ethiopian languages), gender-bias and vowel-length/gemination error analyses, and WER benchmarking vs. OmniASR/Whisper/MMS baselines. |
+| [PluraMath_Research_Deep_Dive.md](templates/PluraMath_Research_Deep_Dive.md) | **Reference deep dive** dissecting the PluraMath (Dementieva et al., 2026) paper. | Exemplar detailing a 18-language multilingual math reasoning benchmark extending PolyMath, 27-LLM benchmarking with DW-Acc, human-in-the-loop translation pipeline, chrF++ translation–reasoning correlation analysis, and open-source data/eval framework. |
 
 > [!TIP]
 > Use the associated **Research Paper Analyst Skill** (`academic-research-eval`) to automatically parse paper repos, perform literature analysis, design hypotheses, and validate submission packages.

@@ -31,10 +31,11 @@ Determine which mode the user needs:
 1. If a GitHub repo is given, fetch: README.md, main.py (or equivalent entry point), eval scripts, any JSON stats files, and paper references
 2. If a paper URL/arXiv ID is given, fetch the full HTML version (prefer arXiv HTML over PDF for parsing)
 3. If a HuggingFace dataset is given, fetch the dataset card (README.md)
+4. **ALWAYS check the paper's code repository** (GitHub/HuggingFace) if the paper mentions one or one can be inferred from the abstract/authors/organisation. The code repo often contains precise details not in the paper: exact prompt templates (`instructions_prompts.py`), CLI flags, hyperparameter constants, provider configurations, data schemas, and runner scripts. Fetch at minimum: `README.md`, the main runner (e.g. `run_inference.py`, `main.py`), config files (`.yaml`, `.json`), prompt/instruction files, and `requirements.txt`.
 
 **Fetch order of priority:**
 ```
-arXiv HTML   →   README.md   →   eval scripts   →   data schemas   →   config files
+arXiv HTML  →  paper's GitHub/HF repo (README + runner + prompts + configs)  →  HF dataset card  →  evaluation scripts  →  data schemas  →  config files
 ```
 
 ### Step 2 — Fill the Analysis Template
